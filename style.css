@@ -1,0 +1,13 @@
+
+// Welcome message in browser console
+console.log("Welcome to Venu's Portfolio!");
+
+// Highlight active navigation links
+const links = document.querySelectorAll("nav a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        links.forEach(item => item.style.color = "white");
+        link.style.color = "#a78bfa";
+    });
+});
